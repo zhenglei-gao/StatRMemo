@@ -28,14 +28,41 @@ We will first load `googleVis` and an example dataset. This code is directly bor
 
 ```r
 library(googleVis)
+```
+
+```
+## Error: there is no package called 'googleVis'
+```
+
+```r
 
 # Load most recent data
 URL <- "https://raw.github.com/christophergandrud/amcData/master/MainData/amcCountryYear.csv"
 Full <- RCurl::getURL(URL)
-Full <- read.csv(textConnection(Full))
+```
 
-# Clean for mapping 
+```
+## Error: SSL certificate problem, verify that the CA cert is OK. Details:
+## error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify
+## failed
+```
+
+```r
+Full <- read.csv(textConnection(Full))
+```
+
+```
+## Error: object 'Full' not found
+```
+
+```r
+
+# Clean for mapping
 Full <- plyr::rename(Full, c(NumAMCCountryNoNA = "TotalAmcCreated"))
+```
+
+```
+## Error: object 'Full' not found
 ```
 
 
@@ -62,6 +89,10 @@ MapAMC <- function(y){
 
 Years <- c(1980, 2011)
 lapply(Years, MapAMC)
+```
+
+```
+## Error: could not find function "gvisGeoMap"
 ```
 
 

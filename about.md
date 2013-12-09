@@ -1,5 +1,5 @@
 ---
-title: About Poirot
+title: About Me
 url: {lib: libraries}
 highlighter: prettify
 hitheme: twitter-bootstrap
@@ -18,9 +18,9 @@ Poirot is still under development and can be installed from github using [devtoo
 
 ```r
 require(devtools)
-install_github('poirot', 'ramnathv')
-install_github('slidify', 'ramnathv', ref = 'dev')
-install_github('slidifyLibraries', 'ramnathv')
+install_github("poirot", "ramnathv")
+install_github("slidify", "ramnathv", ref = "dev")
+install_github("slidifyLibraries", "ramnathv")
 ```
 
 

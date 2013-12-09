@@ -32,13 +32,6 @@ library(zipcode)
 ```r
 library(ggplot2)
 library(scales)
-```
-
-```
-## Warning: package 'scales' was built under R version 2.15.3
-```
-
-```r
 library(lubridate)
 library(maps)
 ```
@@ -49,13 +42,6 @@ library(maps)
 
 ```r
 library(animation)
-```
-
-```
-## Warning: package 'animation' was built under R version 2.15.3
-```
-
-```r
 library(ggthemes)
 ```
 
@@ -65,13 +51,6 @@ library(ggthemes)
 
 ```r
 library(plyr)
-```
-
-```
-## Warning: package 'plyr' was built under R version 2.15.3
-```
-
-```r
 knitr::opts_chunk$set(tidy = FALSE)
 ```
 

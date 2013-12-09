@@ -1,5 +1,5 @@
 ---
-title: Reproducible Blogging with R Markdown
+title: Statistics, Regulatory Affairs, Ecotoxicology, Environmental Modelling
 ---
 
 <style>

@@ -1,8 +1,8 @@
 mode     : selfcontained
 framework: purus
 github:
-  user: ramnathv
-  repo: poirot
+  user: zhenglei-gao
+  repo: StatRMemo
 
 # HIGHLIGHTER SETTINGS
 highlighter: prettify

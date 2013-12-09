@@ -1,5 +1,5 @@
-USER := 
-REPO := 
+USER := zhenglei-gao
+REPO := StatRMemo
 
 clean:
 	rm -rf *.html \\

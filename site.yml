@@ -1,5 +1,5 @@
-title: Poirot
-tagline: Blogging for Data Scientists
+title: Environmental Safety and Statistics
+tagline: Regulatory Environmental Sciences and Statistics
 logo: assets/img/poirot.jpg 
 owner: Zhenglei Gao
 author:
@@ -13,10 +13,10 @@ social:
   twitter: ramnath_vaidya
 
 # Choose url: / for local development
-url: http://ramnathv.github.com/poirotBlog/
-rawurl: https://raw.github.com/ramnathv/poirotBlog/gh-pages/
+url: http://zhenglei-gao.github.com/StatRMemo/
+rawurl: https://raw.github.com/zhenglei-gao/StatRMemo/gh-pages/
 # url: /
-URL: http://github.com/ramnathv/poirot
+URL: http://github.com/zhenglei-gao/StatRMemo
 navigation: 
   - {item: Home, href: index.html}
   - {item: About, href: about.html}

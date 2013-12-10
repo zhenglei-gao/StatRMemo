@@ -1,5 +1,5 @@
 ---
-title: Reproducible Blogging with R Markdown
+title: Change Title for blog.md
 ---
 
 <style>

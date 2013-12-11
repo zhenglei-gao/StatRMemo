@@ -20,3 +20,4 @@ URL: http://github.com/zhenglei-gao/StatRMemo
 navigation: 
   - {item: Home, href: index.html}
   - {item: About, href: about.html}
+  - {item: Links, href: test.html}

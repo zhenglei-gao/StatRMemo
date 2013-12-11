@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Repeated Measure Data and Mixed Models</title>
+  <title>Repeated Measure and Longitudinal Data</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="" />
@@ -59,10 +59,10 @@
           <ol id="posts">
             <li class="post">
               <h3>
-                <a href="#">Repeated Measure Data and Mixed Models</a>
+                <a href="#">Repeated Measure and Longitudinal Data</a>
               </h3>
-              <span>2012-12-12</span><br/>
-               <a class='label label-success' href='https://raw.github.com/zhenglei-gao/StatRMemo/gh-pages/posts/Repeated-Measure-ANOVA-LMM.Rmd'>Source</a>
+              <span>2013-12-12</span><br/>
+               <a class='label label-success' href='https://raw.github.com/zhenglei-gao/StatRMemo/gh-pages/posts/Ecotox1.Rmd'>Source</a>
               
 <style>
 p {
@@ -70,7 +70,29 @@ p {
 }
 </style>
 
-<p>I am a regular reader of the <a href="http://www.flowingdata.com">FlowingData</a> blog by Nathan Yau. It is an excellent reference for anyone interested in statistical visualization of data. One of his posts that caught my attention was a visualization of the growth of Walmart in the US. Given my research interests in retail, it was a fascinating insight into their growth strategy. So, I set out to recreate this visualization in R and was amazed at what one could achieve with less than 100 lines of R code. This blog post is a tutorial that describes how to create such a visualization of spatial growth.</p>
+<h2>Data</h2>
+
+<p>The kind of data is like:</p>
+
+<pre><code class="r">data &lt;- rnorm(100,0,1)
+</code></pre>
+
+<h2>Possible Methods</h2>
+
+<h3>1. Univariate Methods</h3>
+
+<ol>
+<li>Williams&#39; Test or t-test</li>
+<li>Repeated Measure ANOVA</li>
+<li>Linear Mixed Models</li>
+<li>Generalized Linear Mixed Models</li>
+</ol>
+
+<h3>2. Multivariate Methods</h3>
+
+<h2>Conclusion</h2>
+
+<p>???</p>
 
 <h4>Step 0. Download R</h4>
 
@@ -87,9 +109,24 @@ p {
 </code></pre>
 
 <pre><code class="r">library(ggplot2)
-library(scales)
-library(lubridate)
-library(maps)
+</code></pre>
+
+<pre><code>## Warning: package &#39;ggplot2&#39; was built under R version 3.0.2
+</code></pre>
+
+<pre><code class="r">library(scales)
+</code></pre>
+
+<pre><code>## Warning: package &#39;scales&#39; was built under R version 3.0.2
+</code></pre>
+
+<pre><code class="r">library(lubridate)
+</code></pre>
+
+<pre><code>## Warning: package &#39;lubridate&#39; was built under R version 3.0.2
+</code></pre>
+
+<pre><code class="r">library(maps)
 </code></pre>
 
 <pre><code>## Error: there is no package called &#39;maps&#39;

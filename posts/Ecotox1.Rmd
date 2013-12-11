@@ -1,7 +1,7 @@
 ---
-title: Repeated Measure Data and Mixed Models
-date: 2012-12-12
-tags: [Target, Visualization]
+title: Repeated Measure and Longitudinal Data
+date: 2013-12-12
+tags: [Ecotox, Anova, Mixed_Models]
 ---
 
 <style>
@@ -10,7 +10,27 @@ p {
 }
 </style>
 
-I am a regular reader of the [FlowingData](http://www.flowingdata.com) blog by Nathan Yau. It is an excellent reference for anyone interested in statistical visualization of data. One of his posts that caught my attention was a visualization of the growth of Walmart in the US. Given my research interests in retail, it was a fascinating insight into their growth strategy. So, I set out to recreate this visualization in R and was amazed at what one could achieve with less than 100 lines of R code. This blog post is a tutorial that describes how to create such a visualization of spatial growth.
+## Data 
+
+The kind of data is like:
+
+```r
+data <- rnorm(100,0,1)
+```
+## Possible Methods
+
+### 1. Univariate Methods
+
+0. Williams' Test or t-test
+1. Repeated Measure ANOVA
+2. Linear Mixed Models
+3. Generalized Linear Mixed Models
+
+### 2. Multivariate Methods
+
+## Conclusion
+
+???
 
 #### Step 0. Download R
 
@@ -31,8 +51,29 @@ library(zipcode)
 
 ```r
 library(ggplot2)
+```
+
+```
+## Warning: package 'ggplot2' was built under R version 3.0.2
+```
+
+```r
 library(scales)
+```
+
+```
+## Warning: package 'scales' was built under R version 3.0.2
+```
+
+```r
 library(lubridate)
+```
+
+```
+## Warning: package 'lubridate' was built under R version 3.0.2
+```
+
+```r
 library(maps)
 ```
 

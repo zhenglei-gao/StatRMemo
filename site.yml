@@ -1,6 +1,6 @@
-title: Environmental Safety and Statistics
-tagline: Statistics, Regulatory Affairs, Ecotoxicology, Environmental Modelling
-logo: assets/img/poirot.jpg 
+title: Stat & R Memo
+tagline: Environmental Safety and Statistics
+logo: assets/img/Koala.jpg 
 owner: Zhenglei Gao
 author:
   email: zhenglei.gao@gmail.com
@@ -10,7 +10,7 @@ author:
 
 social:
   github: zhenglei-gao
-  twitter: ramnath_vaidya
+  stackoverflow: zhenglei
 
 # Choose url: / for local development
 url: http://zhenglei-gao.github.com/StatRMemo/

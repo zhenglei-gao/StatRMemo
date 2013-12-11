@@ -31,8 +31,29 @@ library(zipcode)
 
 ```r
 library(ggplot2)
+```
+
+```
+## Warning: package 'ggplot2' was built under R version 3.0.2
+```
+
+```r
 library(scales)
+```
+
+```
+## Warning: package 'scales' was built under R version 3.0.2
+```
+
+```r
 library(lubridate)
+```
+
+```
+## Warning: package 'lubridate' was built under R version 3.0.2
+```
+
+```r
 library(maps)
 ```
 
@@ -42,6 +63,13 @@ library(maps)
 
 ```r
 library(animation)
+```
+
+```
+## Error: there is no package called 'animation'
+```
+
+```r
 library(ggthemes)
 ```
 

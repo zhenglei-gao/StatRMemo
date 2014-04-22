@@ -28,13 +28,6 @@ We will first load `googleVis` and an example dataset. This code is directly bor
 
 ```r
 library(googleVis)
-```
-
-```
-## Error: there is no package called 'googleVis'
-```
-
-```r
 
 # Load most recent data
 URL <- "https://raw.github.com/christophergandrud/amcData/master/MainData/amcCountryYear.csv"
@@ -43,8 +36,7 @@ Full <- RCurl::getURL(URL)
 
 ```
 ## Error: SSL certificate problem, verify that the CA cert is OK. Details:
-## error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify
-## failed
+## error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed
 ```
 
 ```r
@@ -92,7 +84,7 @@ lapply(Years, MapAMC)
 ```
 
 ```
-## Error: could not find function "gvisGeoMap"
+## Error: object 'Full' not found
 ```
 
 

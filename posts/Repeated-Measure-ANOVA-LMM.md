@@ -42,13 +42,6 @@ library(maps)
 
 ```r
 library(animation)
-```
-
-```
-## Error: there is no package called 'animation'
-```
-
-```r
 library(ggthemes)
 ```
 

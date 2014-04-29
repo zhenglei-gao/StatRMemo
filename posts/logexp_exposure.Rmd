@@ -1,0 +1,61 @@
+---
+title: "Logistic_Exposure"
+author: "Zhenglei Gao"
+date: "20-04-2014"
+output: html_document
+---
+
+The following programs adapted from [USGS website](http://www.npwrc.usgs.gov/resource/birds/nestsurv/download/CreateLogisticExposureFamily.R) illustrate 1) logistic-exposure modeling of nest survival, 2) computation of AIC-based model-selection criteria, and 3) computation of model-averaged regression coefficients and unconditional standard errors. These programs accompany Shaffer (2004). 
+
+
+
+```{r}
+# Logistical Exposure Link Function
+# See Shaffer, T.  2004. A unifying approach to analyzing nest success. 
+# Auk 121(2): 526-540.
+library(MASS)
+logexp.2.15 <- function(days = 1)
+{
+    linkfun <- function(mu) qlogis(mu^(1/days))
+    linkinv <- function(eta) plogis(eta)^days
+    mu.eta <- function(eta) days * plogis(eta)^(days-1) *
+      .Call("logit_mu_eta", eta, PACKAGE = "stats")
+    valideta <- function(eta) TRUE
+    link <- paste("logexp(", days, ")", sep="")
+    structure(list(linkfun = linkfun, linkinv = linkinv,
+                   mu.eta = mu.eta, valideta = valideta, name = link),
+              class = "link-glm")
+}
+logexp <- function(exposure = 1)
+{
+  linkfun <- function(mu) qlogis(mu^(1/exposure))
+  ## FIXME: is there some trick we can play here to allow
+  ##   evaluation in the context of the 'data' argument?
+  linkinv <- function(eta)  plogis(eta)^exposure
+  mu.eta <- function(eta) exposure * plogis(eta)^(exposure-1) *
+    .Call(stats:::C_logit_mu_eta, eta, PACKAGE = "stats")
+  valideta <- function(eta) TRUE
+  link <- paste("logexp(", deparse(substitute(exposure)), ")",
+                sep="")
+  structure(list(linkfun = linkfun, linkinv = linkinv,
+                 mu.eta = mu.eta, valideta = valideta, 
+                 name = link),
+            class = "link-glm")
+}
+#Example using chat data from Shaffer(2004).
+nestdata<-read.table("http://data.prbo.org/tools/NestSurvival/chat.txt")
+chat.glm.logexp<-glm(survive/trials~parastat+nest_ht*patsize,family=binomial(logexp(exposure=nestdata$expos)),data=nestdata)
+## I would like to use step instead stepAIC, they basicall do the same thing.
+chat.step<-step(chat.glm.logexp,scope=list(upper=~parastat+nest_ht*patsize,lower=~1))
+chat.step$anova
+summary(chat.step)
+
+```
+
+
+##Appendix
+
+```{r}
+nestdata
+```
+

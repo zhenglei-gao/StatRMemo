@@ -1,7 +1,7 @@
 ---
 title: "Latex Traps"
 author: "Zhenglei Gao"
-date: "Tuesday, April 22, 2014"
+date: "2014-04-12"
 output: html_document
 ---
 

@@ -1,0 +1,48 @@
+# Dependencies
+markdown:  redcarpet
+pygments:	true
+
+# Permalinks
+permalink:	/:title
+
+# Setup
+title:		KinGUII
+tagline:	'Kinetic Evaluations'
+description:	'Blog Site for Kinetic Evaluations'
+url:		"/"
+baseurl: "/"
+
+author:
+  name:		'Zhenglei Gao'
+  url:		https://github.com/zhenglei-gao
+
+paginate:	5
+
+# Custom vars
+ico:      /assets/images/slidify_logo_small.ico
+icon:		  /assets/images/slidify_logo_small.png
+cover:		/assets/images/maps.jpg
+
+social:
+ 
+  - icon:	github
+    url:	https://github.com/zhenglei-gao
+    desc:	Fork me on github
+
+  - icon:	googleplus-alt
+    url:	https://google.com/+zhenglei.gao
+    desc:	Add me on google+
+    
+menu:
+  - title:	Home
+    url:	'/'
+    
+  - title:	About
+    url:	/about/
+    
+  
+copyright:
+  author:	Zhenglei Gao
+  url:		http://github.com/zhenglei-gao
+  type_title:	Some rights reserved
+  type_url:	http://creativecommons.org/licenses/by-nc/2.5
